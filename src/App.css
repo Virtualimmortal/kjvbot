@@ -13,15 +13,22 @@
   }
 }
 
-.App-header {
+.App-loader {
   background-color: #282c34;
   min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9000;
 }
 
 .App-link {
@@ -35,4 +42,190 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#loadingIndicator {
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10001;
+}
+.loading-bg #loadingIndicator {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+body #loadingIndicator .loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  z-index: 1000;
+}
+body #loadingIndicator .preloader-wrapper {
+  position: relative;
+  left: -35%;
+}
+body.loading-bg #loadingIndicator,
+body.loading #loadingIndicator {
+  display: block;
+}
+
+.overlay .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  display: none;
+}
+.overlay .preloader-wrapper {
+  position: relative;
+  left: -35%;
+}
+.overlay.loading .loader {
+  display: block;
+}
+
+#verseBrowser::placeholder {
+  color: #3f4752;
+}
+.SearchForm .container {
+  max-width: 75%;
+  width: 75%;
+}
+.SearchForm h3 {
+  font-size: 2.1em;
+}
+#kjvBot {
+}
+#results {
+}
+#results .verse-nav {
+  text-align: left;
+  padding: 1em;
+  margin-top: 2em;
+  height: 70px;
+  display: none;
+}
+#results  .verse-result-container.expanded .verse-nav {
+  display: block;
+}
+#results .verse-nav .btn {
+  height: 60px;
+  background-color: rgb(168, 168, 168);
+
+}
+#results .verse-result-container {
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#results .verse-result-container a.verse-result {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  color: #333;
+  text-align: left;
+}
+#results .verse-result-container a:active {
+  background-color: inherit;
+}
+#results .verse-result-container a i {
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+#results .verse-result-container a:hover {
+  background-color: #0c7bc5;
+  color: #fff;
+}
+#results .verse-result-container.expanded a:hover {
+  background-color: inherit;
+  color: inherit;
+}
+#results .verse-result-container {
+  -webkit-transition: all 0.5s; /* Safari */
+  transition: all 0.5s;
+  box-shadow: 0 0px 0 0 #000;
+}
+#results .verse-result-container.expanded {
+  background-color: inherit;
+  box-shadow: 0px 1px 17px 9px rgba(32, 33, 36, 0.2);
+  margin: 1em 0;
+  padding: 1em 0 1em;
+  font-size: 1.1em;
+}
+#results .verse-result .markup {
+  display: block;
+  margin-right: 5px;
+}
+
+#floatingActionMenu {
+  position: fixed;
+  right: 13px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 2000;
+}
+
+/* ------------------------------------------------------------------- 
+  * responsive:
+  * 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 400px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .SearchForm .container {
+    max-width: 65%;
+    width: 65%;
+  }
+  .SearchForm h3 {
+    font-size: 3em;
+  }
+  #kjvBot {
+    font-size: 2em;
+  }
+  #results .verse-result-container.expanded {
+    background-color: inherit;
+    box-shadow: 0px 1px 17px 9px rgba(32, 33, 36, 0.2);
+    margin: 2em 0 5em 0;
+    padding: 3em 0 1em 0;
+    font-size: 1.1em;
+  }
+  #results .verse-result-container a {
+    font-size: 1.3em;
+  }
+  #results .verse-result-container.expanded {
+  }
+  
+  #verseBrowser {
+    font-size: 1.4em;
+  }
+  #results ul li {
+  }
+  #results ul li a {
+    font-size: 1.4em;
+    padding: 0 1.2em;
+  }
+  #results ul li a i {
+    font-size: 1.8em;
+  }
+  #results ul li a i.material-verses {
+    height: 1.3em;
+  }
+  #results ul li .verse-result .markup {
+    margin-right: 1em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
