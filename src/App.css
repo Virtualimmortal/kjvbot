@@ -115,6 +115,7 @@ body.loading #loadingIndicator {
   background-color: rgb(168, 168, 168);
 
 }
+
 #results .verse-result-container {
   background-color: #f7f7f7;
   text-align: center;
@@ -131,8 +132,8 @@ body.loading #loadingIndicator {
   background-color: inherit;
 }
 #results .verse-result-container a i {
-  font-size: 1.1em;
-  vertical-align: middle;
+  font-size: 1.8em;
+  vertical-align: text-top;
 }
 
 #results .verse-result-container a:hover {

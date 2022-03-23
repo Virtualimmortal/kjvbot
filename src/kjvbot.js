@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import M from 'materialize-css'
+import './kjvbot.css';
 
 var jQuery = $;
 var kjvBot = {
@@ -34,7 +35,11 @@ document.addEventListener('DOMContentLoaded', function()
   /**
    * Floating Action Menu
    */
-  var elems = document.querySelectorAll('.fixed-action-btn');
+  
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {});
+
+  elems = document.querySelectorAll('.fixed-action-btn');
   var fixedActionButtons = M.FloatingActionButton.init(elems, {
     'hoverEnabled': false,
   });
@@ -47,14 +52,14 @@ document.addEventListener('DOMContentLoaded', function()
     return false;
   })
 
-  $('#floatingActionMenu .toTopBtn').on('click', function(e) {
+  $('.toTopBtn').on('click', function(e) {
     e.preventDefault();
     window.scrollTo(0,0);
     fixedActionButtons[0].close();
     return false;
   })
 
-  $('#floatingActionMenu .toBottomBtn').on('click', function(e) {
+  $('.toBottomBtn').on('click', function(e) {
     e.preventDefault();
     window.scrollTo(0,document.body.scrollHeight);
     fixedActionButtons[0].close();
