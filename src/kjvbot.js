@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function()
  * Import Json data
  */
 
-$.getJSON('data/kjv-verses.json', function(json) 
+$.getJSON('https://virtualimmortal.github.io/kjvbot/data/kjv-verses.json', function(json) 
 {
   kjvBot.data.verses = json; 
   console.log(kjvBot);

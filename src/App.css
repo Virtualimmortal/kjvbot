@@ -97,9 +97,8 @@ body.loading #loadingIndicator {
 .SearchForm h3 {
   font-size: 2.1em;
 }
-#kjvBot {
-}
-#results {
+#kjvBot::placeholder {
+  color: #aaa;
 }
 #results .verse-nav {
   text-align: left;
@@ -203,13 +202,9 @@ body.loading #loadingIndicator {
   #results .verse-result-container a {
     font-size: 1.3em;
   }
-  #results .verse-result-container.expanded {
-  }
   
   #verseBrowser {
     font-size: 1.4em;
-  }
-  #results ul li {
   }
   #results ul li a {
     font-size: 1.4em;

@@ -20,7 +20,6 @@ const SearchForm = () => {
                      defaultValue="" 
                      placeholder="Search" 
                      onKeyUp={(e) => ((e.currentTarget.value.length > 3) || ((e.key === 'Enter') && (e.currentTarget.value.length > 1))) ? SearchForm.updateSearch(e.currentTarget.value) : {}}
-                     onEnter={(e) => SearchForm.updateSearch(e.currentTarget.value) }
                      />
                </div>
 
