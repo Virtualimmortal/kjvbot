@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kjvbot/static/css/main.da3c6862.css",
-    "main.js": "/kjvbot/static/js/main.97010cdc.js",
+    "main.css": "/kjvbot/static/css/main.d340b608.css",
+    "main.js": "/kjvbot/static/js/main.83b744b4.js",
     "static/js/787.bc0264d5.chunk.js": "/kjvbot/static/js/787.bc0264d5.chunk.js",
     "static/media/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png": "/kjvbot/static/media/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.9c66ea7ae0546957d457.png",
     "static/media/react-logo.svg": "/kjvbot/static/media/react-logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/kjvbot/index.html",
-    "main.da3c6862.css.map": "/kjvbot/static/css/main.da3c6862.css.map",
-    "main.97010cdc.js.map": "/kjvbot/static/js/main.97010cdc.js.map",
+    "main.d340b608.css.map": "/kjvbot/static/css/main.d340b608.css.map",
+    "main.83b744b4.js.map": "/kjvbot/static/js/main.83b744b4.js.map",
     "787.bc0264d5.chunk.js.map": "/kjvbot/static/js/787.bc0264d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da3c6862.css",
-    "static/js/main.97010cdc.js"
+    "static/css/main.d340b608.css",
+    "static/js/main.83b744b4.js"
   ]
 }
