@@ -1,6 +1,6 @@
 {
   "homepage": "https://Virtualimmortal.github.io/kjvbot-react-demo",
-  "name": "kjvbot-react-app",
+  "name": "kjvbot",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
